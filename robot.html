@@ -1,0 +1,82 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Update the video feed URL to the fixed IP address -->
+<img src="http://192.168.216.59:5010/video_feed" width="60%" latency=1 />
+<div style="float:right"></div>
+<div style="height:400px; width:300px; float:right;">
+<center>
+<h2>Surveillance Robot</h2><br><br>
+
+<!-- Directional Control -->
+<a href="#" id="up" style="font-size:30px;text-decoration:none;"> &#x1F881;&#x1F881;<br>Forward</a><br><br>
+
+<a href="#" id="left" style="font-size:30px;text-decoration:none;"> &#x1F880;&#x1F880;Left</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" id="right" style="font-size:30px; text-decoration:none;"> Right &#x1F882;&#x1F882;</a><br><br>
+
+<center><a href="#" id="down" style="font-size:30px;text-decoration:none;"> Backward<br> &#x1F883;&#x1F883;</a></center><br><br>
+
+<!-- Capture Image -->
+<center>
+<a href="/capture_image" id="capture" style="font-size:30px;text-decoration:none;"> Capture Image &#x1F4F7;</a>
+</center><br><br>
+
+<!-- Fire Control -->
+<center>
+<a href="#" id="fire" style="font-size:30px;text-decoration:none;"> Fire &#x1F525;</a>
+</center><br><br>
+
+<!-- Stop Button -->
+<center>
+<a href="#" id="stop" style="font-size:30px;text-decoration:none;"> Stop &#x1F6D1;</a>
+</center><br><br>
+
+</div>
+
+<script>
+$(document).ready(function(){
+    // Move robot forward
+    $("#up").on("mousedown", function() {
+        $.get('/up_side');
+    }).on('mouseup', function() {
+        $.get('/stop');
+    });
+
+    // Move robot backward
+    $("#down").on("mousedown", function() {
+        $.get('/down_side');
+    }).on('mouseup', function() {
+        $.get('/stop');
+    });
+
+    // Move robot left
+    $("#left").on("mousedown", function() {
+        $.get('/left_side');
+    }).on('mouseup', function() {
+        $.get('/stop');
+    });
+
+    // Move robot right
+    $("#right").on("mousedown", function() {
+        $.get('/right_side');
+    }).on('mouseup', function() {
+        $.get('/stop');
+    });
+
+    // Fire control
+    $("#fire").on("click", function() {
+        $.get('/fire');
+    });
+
+    // Stop the robot immediately
+    $("#stop").on("click", function() {
+        $.get('/stop');
+    });
+});
+</script>
+
+</body>
+</html>
