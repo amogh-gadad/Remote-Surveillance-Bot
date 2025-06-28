@@ -76,6 +76,8 @@ The **Raspberry Pi Camera Tank** is a remote-controlled robotic vehicle designed
 ✅ Image capture and download functionality  
 ✅ Stable web interface with minimal latency  
 
+![Final](https://github.com/user-attachments/assets/7229cc9a-3eb1-45fb-adef-8ac01277aa5c)
+
 ---
 
 ## Tech Stack
