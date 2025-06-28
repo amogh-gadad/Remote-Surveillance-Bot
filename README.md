@@ -1,11 +1,11 @@
-# 🚀 Raspberry Pi Camera Tank
+# Raspberry Pi Camera Tank
 
-## 📌 Overview
+## Overview
 The **Raspberry Pi Camera Tank** is a remote-controlled robotic vehicle designed for **real-time video streaming** and **interactive control** over a web interface. Built using a Raspberry Pi, USB camera, motor driver, and electromechanical firing system, this platform serves as an educational project in **robotics, IoT, and embedded systems**.  
 
 ---
 
-## 🎯 Features
+## Features
 ✅ Wireless control over the internet or LAN  
 ✅ Live MJPEG video streaming  
 ✅ Tank locomotion: forward, backward, left, right  
@@ -15,7 +15,7 @@ The **Raspberry Pi Camera Tank** is a remote-controlled robotic vehicle designed
 
 ---
 
-## 🖼️ System Architecture
+## System Architecture
 
 **Hardware Components:**
 - Raspberry Pi (central controller)
@@ -34,7 +34,7 @@ The **Raspberry Pi Camera Tank** is a remote-controlled robotic vehicle designed
 
 ---
 
-## 🛠️ Functional Workflow
+## Functional Workflow
 
 1. The Raspberry Pi initializes all components.
 2. The Flask web server hosts the control dashboard.
@@ -49,7 +49,7 @@ The **Raspberry Pi Camera Tank** is a remote-controlled robotic vehicle designed
 
 ---
 
-## ⚙️ Design Specifications
+## Design Specifications
 
 **Inputs:**
 - User commands via Flask web app
@@ -69,7 +69,7 @@ The **Raspberry Pi Camera Tank** is a remote-controlled robotic vehicle designed
 
 ---
 
-## 🏆 Results
+## Results
 ✅ Real-time video streaming verified  
 ✅ Responsive robot movement control  
 ✅ Successful firing mechanism activation  
@@ -78,7 +78,7 @@ The **Raspberry Pi Camera Tank** is a remote-controlled robotic vehicle designed
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 - **Language:** Python 3
 - **Frameworks:** Flask, OpenCV
 - **Libraries:** RPi.GPIO, threading
@@ -86,14 +86,14 @@ The **Raspberry Pi Camera Tank** is a remote-controlled robotic vehicle designed
 
 ---
 
-## 🛡️ Safety Precautions
+## Safety Precautions
 - Ensure proper motor driver wiring to avoid shorts.
 - Verify the power supply ratings before connecting motors.
 - Test firing mechanism carefully in a controlled environment.
 
 ---
 
-## 🌱 Future Work
+## Future Work
 - Integrate autonomous navigation with AI object detection.
 - Add obstacle avoidance sensors.
 - Develop a mobile app interface.
@@ -101,7 +101,7 @@ The **Raspberry Pi Camera Tank** is a remote-controlled robotic vehicle designed
 
 ---
 
-## ✨ Authors
+## Authors
 - Amogh M. Gadad 
 - Amruta R. Biradarpatil 
 - Ashtami Hosapeti 
